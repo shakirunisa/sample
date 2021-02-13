@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>European Cities List</h2>
+  <table class="table">
+    <thead>
+      <tr >
+        <th *ngFor="let weather of weatherList" scope="col">{{weather}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let weather of allCititiesdetails">
+        <th (click)="weatherCondition(weather)" class="underline" scope="row">{{weather.name}}</th>
+        <td>{{weather.temp}}</td>
+        <td>{{weather.sunrise}}</td>
+        <td>{{weather.sunset}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <router-outlet></router-outlet>

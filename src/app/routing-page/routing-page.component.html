@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>City Weather Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Temparature</th>
+        <th scope="col">Sea Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{weatherDetails.temp}}</td>
+        <td *ngIf="weatherDetails.sealevel">{{weatherDetails.sealevel}}</td>
+        <td>No Sea Level Found</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
